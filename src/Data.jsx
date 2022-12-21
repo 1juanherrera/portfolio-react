@@ -37,19 +37,19 @@ export const bios = [
     id: 1,
     icon: <FaUser />,
     key: "Name",
-    value: "Abeezarar"
+    value: "Juan"
   },
   {
     id: 2,
     icon: <FaPhoneAlt />,
     key: "Phone",
-    value: "+959883271929"
+    value: "+573153261932"
   },
   {
     id: 3,
     icon: <FaPaperPlane />,
     key: "Email",
-    value: "abee02@gmail.com"
+    value: "juansebas751@gmail.com"
   }
 ]
 

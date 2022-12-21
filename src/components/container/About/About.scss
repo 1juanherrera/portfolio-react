@@ -1,0 +1,68 @@
+.about_container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    position: relative;
+
+    @media(max-width: 700px){
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+
+    .about_left {
+        background: #F08C12;
+        max-width: 350px;
+        height: 350px;
+        justify-self: center;
+        border-radius: 5px;
+        box-shadow: 0 0 20px #F08C12;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .about_right {
+        color: #fff;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        @media(max-width){
+            padding: 0;
+            margin-top: 2rem;
+        }
+
+        p {
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            max-width: 450px;
+        }
+        .bio {
+            display: flex;
+            font-size: 0.90rem;
+            max-width: 120px;
+            margin-bottom: 1rem;
+
+            .biokey {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin-right: 3rem;
+            }
+        }
+        a {
+            text-decoration: none;
+            background: #fff;
+            color: #000;
+            font-size: 0.90rem;
+            text-transform: capitalize;
+            width: 165px;
+            border-radius: 10px;
+            padding: 0.65rem 1rem;
+            text-align: center;
+        }
+    }
+}

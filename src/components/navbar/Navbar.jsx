@@ -1,11 +1,50 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.scss';
 import { navLinks, socialIcons } from '../../Data'
-
+import { HiMenuAlt4, HiX } from 'react-icons/hi'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
+
+    const [ toggle, setToggle ] = useState(false)
+
+    const [ scroll, setScroll ] = useState(false)
+
+    const MenuVariants = {
+        hidden: {
+            scale: 0
+        },
+        visible: {
+            scale: 50,
+            transition: {
+                type: 'tween',
+                duration: 0.5,
+            }
+        }
+    }
+
+    const navLinkVariants = {
+        hidden: {
+            display: 'none',
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            y: -30,
+            transition: {
+                delay: 0.7,
+            }
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            setScroll(window.scrollY > 20 )
+        })
+    },  []);
+
     return(
-        <div className='header'>
+        <div className={ scroll ? 'header active' : 'header'}>
             <div className='header__nav-container'>
                 <div className='header__logo'>
                     <h3>JH</h3>
@@ -14,7 +53,7 @@ const Navbar = () => {
                     {navLinks.map(( navLink, index) => {
                         return ( 
                         <li key={index}>
-                            <a href={`${navLink}`}>{navLink}</a>
+                            <a href={`#${navLink}`}>{navLink}</a>
                         </li>
                         )
                     })}
@@ -27,6 +66,33 @@ const Navbar = () => {
                         )
                     })}
                 </div>
+                <div className='header__menu'>
+                    <HiMenuAlt4 onClick={() => {
+                        setToggle(true);
+                    }}/>
+                </div>
+                <motion.div className="header__close-menu"
+                variants={MenuVariants}
+                initial='hidden'
+                animate={toggle ? 'visible' : 'hidden'}
+                ></motion.div>
+                <motion.div className="header__menuX"
+                variants={navLinkVariants}
+                animate={toggle ? 'visible' : 'hidden'}
+                >
+                    <HiX onClick={() => {
+                        setToggle(false)
+                    }}/>
+                    {navLinks.map((navLink, index) => {
+                        return(
+                            <li key={index} onClick={() => {
+                                setToggle(false);
+                            }}>
+                                <a href={`#${navLink}`}>{navLink}</a>
+                            </li>
+                        )
+                    })}
+                </motion.div>
             </div>
         </div>
     )
