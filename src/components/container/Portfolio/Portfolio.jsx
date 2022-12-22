@@ -6,11 +6,19 @@ import { motion } from 'framer-motion'
 
 const Portfolio = () => {
     return <div className='container' id='portfolio'>
-        <div className="title">
+        < motion.div
+        initial={{x: 0, opacity: 0}}
+        whileInView={{y: [50, 0], opacity: 1}}
+        transition={{duration: 1}}
+        className="title">
             <span>My Work</span>
             <h1>Awesome Projects</h1>
-        </div>
-        <div className="workImages">
+        </motion.div>
+        <motion.div
+        initial={{x: 0, opacity: 0}}
+        whileInView={{x: [-250, 0], opacity: 1}}
+        transition={{duration: 1}}
+        className="workImages">
         {workImages.map((workImages) => {
           return (
             <div className="workImage"
@@ -42,7 +50,7 @@ const Portfolio = () => {
             </div>
           )
         })}
-      </div>
+      </motion.div>
     </div>
 }
 

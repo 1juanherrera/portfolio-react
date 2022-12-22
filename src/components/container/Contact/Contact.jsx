@@ -12,7 +12,11 @@ const Contact = () => {
             <h1>Contact Me</h1>
       </div>
       <div className="contact_form">
-        <div className='contact_left_container'>
+        <motion.div
+        initial={{x: 0, opacity: 0}}
+        whileInView={{x: [-250, 0], opacity: 1}}
+        transition={{duration: 1}}
+        className='contact_left_container'>
           <h3>Just Say Hi</h3>
           <p className='contact_text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil unde atque voluptates, cumque molestias eveniet voluptatum animi consectetur magni mollitia dolor exercitationem labore maiores!</p>
           {contacts.map(contact => {
@@ -34,8 +38,12 @@ const Contact = () => {
             )
           })}
           </div>
-        </div>
-        <div className="contact_right">
+        </motion.div>
+        <motion.div
+        initial={{x: 0, opacity: 0}}
+        whileInView={{x: [250, 0], opacity: 1}}
+        transition={{duration: 1}}
+        className="contact_right">
           <h3>Get In Touch</h3>
           <div className="row">
             <input type="text" placeholder='First Name' />
@@ -55,7 +63,7 @@ const Contact = () => {
             >
             <a href="#">Send</a>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </div>
     )
