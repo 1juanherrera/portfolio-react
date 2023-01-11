@@ -1,5 +1,5 @@
 import React from 'react'
-import './Portfolio.scss'
+import './_Portfolio.scss'
 import { workImages } from '../../../Data'
 import {FiGithub, FiEye} from "react-icons/fi";
 import { motion } from 'framer-motion'

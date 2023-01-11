@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Skills.scss'
+import './_Skills.scss'
 import { icons } from '../../../Data'
 import { motion } from 'framer-motion'
 

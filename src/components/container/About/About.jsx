@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.scss'
+import './_About.scss'
 import { bios } from '../../../Data';
 import portfolio from '../../../assets/portfolio.jpg'
 import { motion } from 'framer-motion';

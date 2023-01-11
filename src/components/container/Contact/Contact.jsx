@@ -1,7 +1,7 @@
 import React from 'react';
 import { contacts } from '../../../Data';
 import { socialIcons } from '../../../Data';
-import './Contact.scss';
+import './_Contact.scss';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
