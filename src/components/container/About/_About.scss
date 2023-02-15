@@ -17,11 +17,13 @@
         justify-self: center;
         border-radius: 5px;
         box-shadow: 0 0 20px #F08C12;
+        border-radius: 2rem;
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 2rem;
         }
     }
     .about_right {
@@ -36,15 +38,18 @@
         }
 
         p {
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
-            max-width: 450px;
+            font-size: 1rem;
+            max-width: 600px;
+            padding: 1rem;
+            text-align: left;
         }
         .bio {
+            margin-left: 20px;
             display: flex;
             font-size: 0.90rem;
             max-width: 120px;
             margin-bottom: 1rem;
+            
 
             .biokey {
                 display: flex;
@@ -52,8 +57,13 @@
                 gap: 0.5rem;
                 margin-right: 3rem;
             }
+
+            @media(max-width: 700px){
+                margin-left: 0;
+            }
         }
         a {
+            margin-top: 20px;
             text-decoration: none;
             background: #fff;
             color: #000;
@@ -63,6 +73,13 @@
             border-radius: 10px;
             padding: 0.65rem 1rem;
             text-align: center;
+            margin-left: 200px;
+            margin-bottom: 20px;
+
+            @media(max-width: 700px){
+                margin-top: 2rem;
+                margin-left: 70px;
+            }
         }
     }
 }

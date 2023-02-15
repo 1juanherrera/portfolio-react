@@ -5,18 +5,15 @@ import {  FaHtml5,
           FaSass, 
           FaFigma, 
           FaPhoneAlt, 
-          FaUser, 
           FaMapMarkerAlt, 
           FaPaperPlane, 
-          FaDribbble, 
+          FaGithub, 
           FaInstagram, 
-          FaLinkedin
+          FaLinkedin,
+          FaPython
         } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { BsMedium } from "react-icons/bs";
-import portfolio from "./assets/portfolio.jpg"
-import work1 from "./assets/work1.png";
+import work1 from "./assets/pokedex.png";
 import work2 from "./assets/work2.png";
 import work3 from "./assets/work3.png";
 import work4 from "./assets/work4.png";
@@ -26,50 +23,47 @@ import work6 from "./assets/work6.png";
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"]
 
 export const socialIcons = [
-  <FaDribbble />,
   <FaInstagram />,
   <FaLinkedin />,
-  <BsMedium />
+  <FaGithub />
 ]
 
 export const bios = [
   {
     id: 1,
-    icon: <FaUser />,
-    key: "Name",
-    value: "Juan"
-  },
-  {
-    id: 2,
     icon: <FaPhoneAlt />,
     key: "Phone",
     value: "+573153261932"
   },
   {
-    id: 3,
+    id: 2,
     icon: <FaPaperPlane />,
     key: "Email",
-    value: "juansebas751@gmail.com"
+    value: "juanherrera04502@gmail.com"
   }
 ]
 
-export const icons = [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <SiTypescript />, <FaReact />, <FaNodeJs />, <FaSass />, <FaFigma />]
+export const icons = [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaPython />, <FaReact />, <FaNodeJs />, <FaSass />, <FaFigma />]
 
 export const workNavs = [
   "All", "Web", "App", "Design"
 ]
 
+const pokemon = 'https://pokedex-jhs.netlify.app/#/'
+const pokemonGithub = 'https://github.com/1juanherrera/pokedex'
+
 export const workImages = [
   {
     id: 1,
     img: work1,
-    name: "project 1",
-    category: "web"
+    name: "Pokedex",
+    visit: pokemon,
+    gitHub: pokemonGithub
   },
   {
     id: 2,
     img: work2,
-    name: "project 2",
+    name: "E-commerce",
     category: "web"
   },
   {
@@ -102,16 +96,16 @@ export const contacts = [
   {
     id: 1,
     icon: <FaMapMarkerAlt />,
-    infoText: "16 Road, TharKayTa , Yangon"
+    infoText: "Barranquilla , Colombia"
   },
   {
     id: 2,
     icon: <FaPaperPlane />,
-    infoText: "abee02@gmail.com"
+    infoText: "juanherrera04502@gmail.com"
   },
   {
     id: 3,
     icon: <FaPhoneAlt />,
-    infoText: "+959-883-271-929"
+    infoText: "+57 3153261932"
   }
 ]

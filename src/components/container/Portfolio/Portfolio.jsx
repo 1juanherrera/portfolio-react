@@ -1,6 +1,6 @@
 import React from 'react'
 import './_Portfolio.scss'
-import { workImages } from '../../../Data'
+import { workImages, workNavs } from '../../../Data'
 import {FiGithub, FiEye} from "react-icons/fi";
 import { motion } from 'framer-motion'
 
@@ -24,6 +24,7 @@ const Portfolio = () => {
             <div className="workImage"
              key={workImages.id}
             >
+              <p>{workImages.name}</p>
               <img src={workImages.img} alt="workImg" />
               <motion.div
                 initial={{opacity: 0}}
@@ -31,7 +32,8 @@ const Portfolio = () => {
                 transition={{duration: 0.3 , ease: "easeInOut"}}
                 className='hoverLayer'
               >
-                <motion.a href='#'
+                <motion.a href={workImages.gitHub}
+                target='_blank'
                 whileInView={{scale: [0,1]}}
                  whileHover={{scale: [1, 1.1]}}
                  transition={{duration: 0.3}}
@@ -39,7 +41,8 @@ const Portfolio = () => {
                   <FiGithub />
                 </motion.a>
                   
-                <motion.a href='#'
+                <motion.a href={workImages.visit}
+                target='_blank'
                 whileInView={{scale: [0,1]}}
                  whileHover={{scale: [1, 1.1]}}
                  transition={{duration: 0.3}}
