@@ -61,7 +61,8 @@
             display: none;
         }
 
-        div {
+        a {
+            font-size: 18px;
             margin-left: 1rem;
 
             svg {
@@ -73,6 +74,7 @@
                 &:hover {
                     opacity: 1;
                 }
+            
             }
         }
     }

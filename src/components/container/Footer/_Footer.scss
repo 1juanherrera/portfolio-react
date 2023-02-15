@@ -38,8 +38,9 @@
             display: flex;
             gap: 0.5rem;
             transition: 0.3s;
-
-            svg {
+            
+            a {
+                color: #fff;
                 opacity: 0.7;
                 cursor: pointer;
                 &:hover {

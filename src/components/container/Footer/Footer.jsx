@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className="stick"></div>
                 <div className="social_icons">
                     {socialIcons.map((socialIcon, index) => {
-                        return <div key={index}>{socialIcon}</div>
+                        return <a href={socialIcon.url} key={index}>{socialIcon.icon}</a>
                     })}
                 </div>
             </div>

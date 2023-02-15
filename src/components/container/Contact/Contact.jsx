@@ -32,9 +32,9 @@ const Contact = () => {
           <div className="social_icons">
             {socialIcons.map((socialIcon, index) => {
             return (
-              <div key={index} >
-                {socialIcon}
-              </div>
+              <a href={socialIcon.url} key={index} >
+                {socialIcon.icon}
+              </a>
             )
           })}
           </div>

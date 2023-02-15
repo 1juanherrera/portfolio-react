@@ -7,14 +7,13 @@ import {  FaHtml5,
           FaPhoneAlt, 
           FaMapMarkerAlt, 
           FaPaperPlane, 
-          FaGithub, 
-          FaInstagram, 
+          FaGithub,  
           FaLinkedin,
           FaPython
         } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import work1 from "./assets/pokedex.png";
-import work2 from "./assets/work2.png";
+import work2 from "./assets/e-commerce.png";
 import work3 from "./assets/work3.png";
 import work4 from "./assets/work4.png";
 import work5 from "./assets/work5.png";
@@ -22,10 +21,18 @@ import work6 from "./assets/work6.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"]
 
+const github = 'https://github.com/1juanherrera'
+const linkdIn = 'https://www.linkedin.com/in/juanherreramu%C3%B1oz/'
+
 export const socialIcons = [
-  <FaInstagram />,
-  <FaLinkedin />,
-  <FaGithub />
+  {
+    icon: <FaGithub />,
+    url: github
+  },
+  {
+    icon: <FaLinkedin />,
+    url: linkdIn
+  }
 ]
 
 export const bios = [
@@ -45,9 +52,6 @@ export const bios = [
 
 export const icons = [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaPython />, <FaReact />, <FaNodeJs />, <FaSass />, <FaFigma />]
 
-export const workNavs = [
-  "All", "Web", "App", "Design"
-]
 
 const pokemon = 'https://pokedex-jhs.netlify.app/#/'
 const pokemonGithub = 'https://github.com/1juanherrera/pokedex'
