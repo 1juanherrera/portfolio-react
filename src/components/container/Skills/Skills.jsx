@@ -12,8 +12,8 @@ const Skills = () => {
                 whileInView={{y: [-50, 0], opacity: 1}}
                 transition={{duration: 1}}
                 className="title">
-                    <span>What I Expert</span>
-                        <h1>Skills</h1>
+                    <span>tecnlogias que manejo</span>
+                        <h1>Habilidades</h1>
                  </motion.div>
                  <motion.div
                  initial={{x: 0, opacity: 0}}

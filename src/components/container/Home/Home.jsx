@@ -26,9 +26,9 @@ const Home = () => {
         </div>
         <div className='home__profile-text'>
             <h3 className='profile-text__name'>
-                Hi, I'm <span>Juan Herrera</span>
+                Hola, Soy <span>Juan Herrera</span>
             </h3>
-            <span className='job'>Web Developer</span>
+            <span className='job'>Desarrollador Web</span>
             <span className='text'>
             Passionate <br />
             to craft innovate <br />
@@ -40,7 +40,7 @@ const Home = () => {
             whileHover={{ scale: 1.1}}
             transition={{ duration: 0.3 }}
             >
-            connect with me
+            Contáctame
             </motion.a>
                 <div className='web'>Web Developer</div>
                 <div className='ui'>UI Passionate</div>

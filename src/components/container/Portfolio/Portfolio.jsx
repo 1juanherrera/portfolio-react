@@ -11,8 +11,8 @@ const Portfolio = () => {
         whileInView={{y: [50, 0], opacity: 1}}
         transition={{duration: 1}}
         className="title">
-            <span>My Work</span>
-            <h1>Awesome Projects</h1>
+            <span>Mi trabajo</span>
+            <h1>Mis proyectos</h1>
         </motion.div>
         <motion.div
         initial={{x: 0, opacity: 0}}

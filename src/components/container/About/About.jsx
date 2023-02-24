@@ -32,14 +32,14 @@ const About = () => {
                     Seguir creciendo a medida que desempeño mis labores en los proyectos, es algo que se me da muy bien; poseo conocimientos en varias tecnologías del Desarrollo Web, las cuales puedo aportar junto a mis habilidades blandas, para lograr el objetivo de desarrollarme profesionalmente en el ámbito de TI. Me encantaría ser parte de tu equipo, si tienes alguna duda o quieres saber más de mi, puedes contactarme a través de mis redes sociales o por un mensaje a traves del formulario de contacto.
                        
                 </p>
-                {bios.map(bio => {
+                {/*bios.map(bio => {
                     return(
                         <div className='bio' key={bio.id}>
                             <div className='biokey'>{bio.icon} {bio.key}</div>
                             <span className='BioValue'>{bio.value}</span>
                         </div>
                     );
-                })}
+                })*/}
                 <motion.a href="https://drive.google.com/file/d/1Sy5iRhXkfGvAR_Ypv9YccTWD0HnY-eRz/view?usp=sharing" 
                 download='' 
                 target='_blank'

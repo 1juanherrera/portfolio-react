@@ -8,8 +8,8 @@ const Contact = () => {
     return (
         <div className="container" id="contact">
       <div className="title">
-            <span>get in touch</span>
-            <h1>Contact Me</h1>
+            <span>ponerse en contacto</span>
+            <h1>Contáctame</h1>
       </div>
       <div className="contact_form">
         <motion.div
@@ -17,7 +17,7 @@ const Contact = () => {
         whileInView={{x: [-250, 0], opacity: 1}}
         transition={{duration: 1}}
         className='contact_left_container'>
-          <h3>Just Say Hi</h3>
+          <h3>Escríbeme un hola</h3>
           <p className='contact_text'><br /></p>
           {contacts.map(contact => {
             return (
@@ -44,24 +44,24 @@ const Contact = () => {
         whileInView={{x: [250, 0], opacity: 1}}
         transition={{duration: 1}}
         className="contact_right">
-          <h3>Get In Touch</h3>
+          <h3>Ponerse en contacto</h3>
           <div className="row">
-            <input type="text" placeholder='First Name' />
-            <input type="text" placeholder='Last name'/>
+            <input type="text" placeholder='Nombre' />
+            <input type="text" placeholder='Apellido'/>
           </div>
           <div className="row">
-            <input type="text" placeholder='Phone' />
-            <input type="email" placeholder='Email' />
+            <input type="text" placeholder='Telefono' />
+            <input type="email" placeholder='Correo' />
           </div>
           <div className="row">
-            <textarea placeholder='message'></textarea>
+            <textarea placeholder='Mensaje'></textarea>
           </div>
           <motion.div
             className="btn"
             whileHover={{scale: 1.1}}
             transition={{duration: 0.3}}
             >
-            <a href="#">Send</a>
+            <a href="#">Enviar</a>
           </motion.div>
         </motion.div>
       </div>

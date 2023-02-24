@@ -12,8 +12,7 @@ const Footer = () => {
         className="footer">
             <div className="copyRight">
                 <p>
-                    Copyright&copy;2022 All rights
-                    reserved | Made by{' '}
+                    Made by{' '}
                     <span>Juan Herrera</span>
                 </p>
             </div>
