@@ -19,7 +19,7 @@ import work4 from "./assets/work4.png";
 import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.png";
 
-export const navLinks = ["home", "about", "skills", "portfolio", "contact"]
+export const navLinks = ["inicio", "acerca de", "habilidades", "portafolio", "contacto"]
 
 const github = 'https://github.com/1juanherrera'
 const linkdIn = 'https://www.linkedin.com/in/juanherreramu%C3%B1oz/'
@@ -39,13 +39,13 @@ export const bios = [
   {
     id: 1,
     icon: <FaPhoneAlt />,
-    key: "Phone",
+    key: "Telefono",
     value: "+573153261932"
   },
   {
     id: 2,
     icon: <FaPaperPlane />,
-    key: "Email",
+    key: "Correo",
     value: "juanherrera04502@gmail.com"
   }
 ]
