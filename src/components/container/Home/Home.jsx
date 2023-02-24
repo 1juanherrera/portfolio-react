@@ -26,7 +26,7 @@ const Home = () => {
         </div>
         <div className='home__profile-text'>
             <h3 className='profile-text__name'>
-                Hola, Soy <span>Juan Herrera</span>
+                Hola, soy <span>Juan Herrera</span>
             </h3>
             <span className='job'>Desarrollador Web</span>
             <span className='text'>
