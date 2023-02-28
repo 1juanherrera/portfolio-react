@@ -34,7 +34,7 @@ const Home = () => {
             to craft innovate <br />
             web products.
             </span>
-            <motion.a href='contact'
+            <motion.a href='#contact'
             variants={moverVariants}
             animate= 'animation' 
             whileHover={{ scale: 1.1}}
