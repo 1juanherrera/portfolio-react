@@ -14,7 +14,7 @@ import {  FaHtml5,
 import { SiJavascript } from "react-icons/si";
 import work1 from "./assets/pokedex.png";
 import work2 from "./assets/e-commerce.png";
-import work3 from "./assets/work3.png";
+import work3 from "./assets/weatherapp.png";
 import work4 from "./assets/work4.png";
 import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.png";
@@ -59,6 +59,9 @@ const pokemonGithub = 'https://github.com/1juanherrera/pokedex'
 const ecommerce = 'https://e-commerce-jh.netlify.app/#/'
 const ecommerceGithub = 'https://github.com/1juanherrera/e-commerce-react'
 
+const weatherApp = 'https://weather-app-jh1.netlify.app/'
+const weatherAppGithub = 'https://github.com/1juanherrera/weatherApp'
+
 export const workImages = [
   {
     id: 1,
@@ -77,26 +80,9 @@ export const workImages = [
   {
     id: 3,
     img: work3,
-    name: "project 3",
-    category: "web"
-  },
-  {
-    id: 4,
-    img: work4,
-    name: "project 4",
-    category: "app"
-  },
-  {
-    id: 5,
-    img: work5,
-    name: "project 5",
-    category: 'app'
-  },
-  {
-    id: 6,
-    img: work6,
-    name: "project 6",
-    category: "design"
+    name: "Weather App",
+    visit: weatherApp,
+    gitHub: weatherAppGithub
   }
 ]
 
