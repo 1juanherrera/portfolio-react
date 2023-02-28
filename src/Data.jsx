@@ -56,6 +56,9 @@ export const icons = [<FaHtml5 />, <FaCss3 />, <SiJavascript />, <FaPython />, <
 const pokemon = 'https://pokedex-jhs.netlify.app/#/'
 const pokemonGithub = 'https://github.com/1juanherrera/pokedex'
 
+const ecommerce = 'https://e-commerce-jh.netlify.app/#/'
+const ecommerceGithub = 'https://github.com/1juanherrera/e-commerce-react'
+
 export const workImages = [
   {
     id: 1,
@@ -68,7 +71,8 @@ export const workImages = [
     id: 2,
     img: work2,
     name: "E-commerce",
-    category: "web"
+    visit: ecommerce,
+    gitHub: ecommerceGithub
   },
   {
     id: 3,
