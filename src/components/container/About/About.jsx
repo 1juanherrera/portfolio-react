@@ -40,8 +40,8 @@ const About = () => {
                         </div>
                     );
                 })*/}
-                <motion.a href="https://drive.google.com/file/d/1Sy5iRhXkfGvAR_Ypv9YccTWD0HnY-eRz/view?usp=sharing" 
-                download='' 
+                <motion.a href="../../../../Docs/Currículum Corporativo Minimalista Azul marino.pdf" 
+                download='CV JUAN' 
                 target='_blank'
                 whileHover={{ scale: 1.1}}
                 transition={{ duration: 0.3 }}
