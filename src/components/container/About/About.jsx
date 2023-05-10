@@ -40,7 +40,7 @@ const About = () => {
                         </div>
                     );
                 })*/}
-                <motion.a href="../../../../Docs/Currículum Corporativo Minimalista Azul marino.pdf" 
+                <motion.a href="../../../../Docs/CVJUAN.pdf" 
                 download='CV JUAN' 
                 target='_blank'
                 whileHover={{ scale: 1.1}}
